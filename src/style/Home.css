@@ -1,0 +1,44 @@
+/* .home class for the main container */
+.home {
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  overflow: hidden; /* Hide overflow content */
+  /* Background gradient animation */
+  background: linear-gradient(45deg, #ff6b6b, #f5f7fa, #0abde3, #10ac84);
+  background-size: 400% 400%; /* Size of the gradient */
+  animation: gradientAnimation 15s ease infinite; /* Animation properties */
+  font-family: Arial, sans-serif; /* Font family for text */
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%; /* Start position of gradient */
+  }
+  50% {
+    background-position: 100% 50%; /* Middle position of gradient */
+  }
+  100% {
+    background-position: 0% 50%; /* End position of gradient */
+  }
+}
+
+/* Styles for the h1 tag */
+h1 {
+  color: white; /* Text color */
+  font-size: 3rem; /* Font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Class for foreground text color */
+.text-foreground {
+  color: white; /* White text color */
+}
+
+/* Hover effect for muted foreground text */
+.text-muted-foreground:hover {
+  color: white; /* Change text color to white on hover */
+}
