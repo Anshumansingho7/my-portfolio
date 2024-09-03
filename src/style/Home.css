@@ -25,20 +25,3 @@
     background-position: 0% 50%; /* End position of gradient */
   }
 }
-
-/* Styles for the h1 tag */
-h1 {
-  color: white; /* Text color */
-  font-size: 3rem; /* Font size */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */
-}
-
-/* Class for foreground text color */
-.text-foreground {
-  color: white; /* White text color */
-}
-
-/* Hover effect for muted foreground text */
-.text-muted-foreground:hover {
-  color: white; /* Change text color to white on hover */
-}

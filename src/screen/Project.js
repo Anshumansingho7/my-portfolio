@@ -5,7 +5,7 @@ export default function Project() {
   return (
     <div className="Project">
       <Header />
-      <div className='mt-10 md:container md:mx-auto md:my-20'>
+      <div className='mt-10 md:container md:mx-auto md:my-20 text-white'>
         <div className="bg-background text-foreground p-8 md:p-12 relative z-10 shadow-lg rounded-lg">
           <h1 className="text-4xl font-extrabold mb-6 animate-fade-in text-primary">Projects</h1>
           <p className="text-lg text-muted-foreground mb-8 animate-fade-in">Explore some of my work, ranging from professional projects to personal endeavors.</p>
