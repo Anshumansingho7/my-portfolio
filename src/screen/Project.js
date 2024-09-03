@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import { Link } from 'react-router-dom';
 
 export default function Project() {
   return (
@@ -13,31 +14,25 @@ export default function Project() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-slide-in border-t border-b border-gray-200 py-8">
             {[
               {
-                date: "Sep 1, 2022",
-                title: "inKind - Ruby on Rails",
-                description: "inKind connects savvy diners with top-rated restaurants, bars and cafés where every meal is a VIP experience, and every experience builds community.",
-                link: "#"
+                title: "Prostream - Ruby on Rails",
+                description: "Pro Stream is an entertainment platform where users can watch movies, shows, and more.",
+                link: "pro_stream"
               },
               {
-                date: "Aug 1, 2021",
-                title: "Oi - Discord BOT",
-                description: "Oi is a Best Music and Multipurpose bot which contains more than 190 commands which helps user to manage their server.",
-                link: "#"
+                title: "PathPrerak - Ruby on Rails",
+                description: "Path Prerak is blogs website. The platform supports five types of posts: Sangh News, Social News, Articles, Interviews, and Other News.",
+                link: "path_prerak"
               },
               {
-                date: "May 1, 2023",
                 title: "Wendy's - Fast food restaurant chain",
                 description: "Puppet Infrastructure Management & Developer",
-                link: "#"
+                link: "/"
               }
             ].map((project, index) => (
               <div key={index} className="bg-card p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-card-hover">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">{project.date}</span>
-                </div>
                 <h2 className="text-2xl font-semibold mt-4 text-secondary">{project.title}</h2>
                 <p className="text-muted-foreground mt-3">{project.description}</p>
-                <a href={project.link} className="text-primary hover:underline mt-4 block">Read more →</a>
+                <Link to={project.link} className="text-primary hover:underline mt-4 block">Read more →</Link>
               </div>
             ))}
           </div>
